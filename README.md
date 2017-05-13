@@ -1,14 +1,14 @@
-\# choo-animals-starter
+# fruitfuljs.github.io
 
-🌐 Made by [@louiscenter](https://twitter.com/louiscenter) 🌐
+The website for the fruitful.js project. Currently under construction.
 
-✨ A starter app for the `your-first-choo-app` guide ✨ 
+To develop locally, simply do:
 
-First, remix this Glitch app so you can start editing the code.
+```sh
+git clone https://github.com/fruitfuljs/fruitfuljs.github.io
+cd fruitfuljs.github.io
+npm install
+npm start
+```
 
-Once your new remix is open, select `index.js` in the left hand sidebar to get started.
-
-Make sure to follow the tutorial:
-
-[https://handbook.choo.io/your-first-choo-app](https://handbook.choo.io/your-first-choo-app)
-
+This will spin up a development server with LiveReload on port 3000.
