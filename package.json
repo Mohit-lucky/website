@@ -1,18 +1,20 @@
 {
   "private": true,
   "scripts": {
-    "start": "budo index.js:bundle.js -p 3000 --no-debug -- -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin"
+    "start": "bankai index.js -p 3000 -j [ -t sheetify/transform ]",
+    "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]"
   },
   "dependencies": {
-    "budo": "^9.4.7",
-    "bundle-collapser": "^1.2.1",
-    "choo": "^5.1.4",
-    "github-api": "^3.0.0",
-    "sheetify": "^6.0.2",
-    "tachyons": "^4.7.1",
+    "bankai": "7.6.1",
+    "budo": "9.4.7",
+    "bundle-collapser": "1.2.1",
+    "choo": "5.1.4",
+    "github-api": "3.0.0",
+    "sheetify": "6.0.2",
+    "tachyons": "4.7.1",
     "text-spinners": "1.0.5",
-    "uglifyify": "^3.0.4",
-    "unassertify": "^2.0.4",
-    "yo-yoify": "^3.7.0"
+    "uglifyify": "3.0.4",
+    "unassertify": "2.0.4",
+    "yo-yoify": "3.7.0"
   }
 }

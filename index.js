@@ -49,23 +49,25 @@ function repoStore (state, emitter) {
 
 function main (state, emit) {
   return html`
-    <div class="ph3 ph5-ns sans-serif">
-      <img src="https://cdn.glitch.com/4b38f914-ed30-47a5-9476-1444ff542c52%2Flogo.png?1494707716957" class="v-mid" width=75 />
-      <h1 class="f1 dib v-mid pl3">fruitful.js</h1>
+    <body>
+      <div class="ph3 ph5-ns sans-serif">
+        <img src="https://cdn.glitch.com/4b38f914-ed30-47a5-9476-1444ff542c52%2Flogo.png?1494707716957" class="v-mid" width=75 />
+        <h1 class="f1 dib v-mid pl3">fruitful.js</h1>
 
-      <p class="measure lh-copy">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
+        <p class="measure lh-copy">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
 
-      <h1 class="f3 mb0">Repositories</h1>
-      ${renderRepositories(state, emit)}
-    </div>
+        <h1 class="f3 mb0">Repositories</h1>
+        ${renderRepositories(state, emit)}
+      </div>
+    </body>
   `
 }
 
 app.route('/', main)
 app.use(repoStore)
-app.mount('div')
+app.mount('body')
