@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "bankai index.js -p 3000 -j [ -t sheetify/transform ]",
+    "start": "bankai index.js -p 3000 -j [ -t sheetify/transform ] -d",
     "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]"
   },
   "dependencies": {
