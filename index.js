@@ -32,7 +32,6 @@ function repoStore (state, emitter) {
   emitter.on('loadRepos', function () {
     var org = gh.getOrganization('fruitfuljs')
     org.getRepos().then(function (repos) {
-      console.log(repos.data[0])
       state.repos = repos.data
       emitter.emit('render')
     })
