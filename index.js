@@ -7,10 +7,17 @@ var app = choo()
 var gh = new GitHub()
 
 css('tachyons')
+css('text-spinners')
 
 function renderRepositories (state, emit) {
+  if (state.reposLoading) {
+    return html`
+      <div class="loading dots" onload=${onload}></div>
+    `
+  }
+
   return html`
-    <ul class="list pv1 ph0" onload=${onload}>
+    <ul class="list pv1 ph0">
       ${state.repos.map(function (repo) {
         return html`
           <li class="db mr2">
@@ -29,10 +36,12 @@ function renderRepositories (state, emit) {
 
 function repoStore (state, emitter) {
   state.repos = []
+  state.reposLoading = true
   emitter.on('loadRepos', function () {
     var org = gh.getOrganization('fruitfuljs')
     org.getRepos().then(function (repos) {
       state.repos = repos.data
+      state.reposLoading = false
       emitter.emit('render')
     })
   })
