@@ -5,7 +5,7 @@ function view (state, emit) {
   return html`
     <body>
       <div class="ph3 ph5-ns sans-serif">
-        <img src="https://cdn.glitch.com/4b38f914-ed30-47a5-9476-1444ff542c52%2Flogo.png?1494707716957" class="v-mid" width=75 />
+        <img src="/assets/logo.png" class="v-mid" width=75 />
         <h1 class="f1 dib v-mid pl3">fruitful.js</h1>
 
         <p class="measure lh-copy">
