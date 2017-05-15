@@ -12,7 +12,7 @@ function view (state, emit) {
       ${state.repos.map(function (repo) {
         return html`
           <li class="db mr2">
-            <a href="" class="f6 f5-ns b dib pa2 link dim mid-gray">${repo.name}</a>
+            <a href="${repo.html_url}" class="f6 f5-ns b dib pa2 link dim mid-gray">${repo.name}</a>
             <p class="f7 i dib">${repo.description}</p>
           </li>
         `
