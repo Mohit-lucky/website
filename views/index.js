@@ -3,7 +3,7 @@ var repos = require('./repos')
 var layout = require('./layout')
 
 function view (state, emit) {
-  return layout(function () {
+  return layout(state, emit, function () {
     return html`
       <div>
         <p class="measure lh-copy">
