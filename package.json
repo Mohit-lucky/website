@@ -2,11 +2,11 @@
   "private": true,
   "scripts": {
     "start": "bankai index.js -p 3000 -j [ -t sheetify/transform ] -d",
-    "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]"
+    "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "bankai": "7.6.1",
-    "budo": "9.4.7",
     "bundle-collapser": "1.2.1",
     "choo": "5.1.4",
     "github-api": "3.0.0",
