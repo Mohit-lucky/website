@@ -4,6 +4,8 @@ var layout = require('./layout')
 
 function view (state, emit) {
   return layout(state, emit, function () {
+    document.title = 'Fruitful'
+
     return html`
       <div>
         <p class="measure lh-copy">
