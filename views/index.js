@@ -20,6 +20,11 @@ function view (state, emit) {
           is invited into the organization.
         </p>
 
+        <p>
+        	Sound interesting? Start by reading the
+					<a href="https://github.com/fruitfuljs/fruitfuljs/blob/master/MIGRATING.md" class="link blue">migration guide</a>!
+				</p>
+
         <h1 class="f3 mb0">Repositories</h1>
         ${repos(state, emit)}
       </div>
