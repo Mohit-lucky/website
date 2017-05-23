@@ -7,6 +7,8 @@ function view (state, emit) {
 
     return html`
       <div class="mt3">
+        <h2>Information regarding Conduct</h2>
+
         <p class="measure lh-copy">
           Fruitful adheres to the WeAllJS Code of Conduct, a copy of which can
           be found in this website's
