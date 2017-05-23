@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "start": "bankai index.js -p 3000 -j [ -t sheetify/transform ] -d",
+    "start": "bankai index.js -p 3001 -j [ -t sheetify/transform ] -d",
     "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]",
     "deploy": "npm run build && gh-pages -d dist",
-    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'"
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'updated CODE_OF_CONDUCT.md'"
   },
   "dependencies": {
     "bankai": "7.6.1",
