@@ -7,7 +7,7 @@ function view (state, emit) {
     document.title = 'Fruitful'
 
     return html`
-      <div>
+      <div class="mt3">
         <p class="measure lh-copy">
           Fruitful is a community of volunteers who are joining forces to
           maintain adopted or abandoned JavaScript packages. We strongly value
