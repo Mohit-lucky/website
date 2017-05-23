@@ -12,8 +12,8 @@ function layout (state, emit, view) {
         ${view()}
 
         <footer class="pv3 mid-gray f6">
-          You can improve this website on <a href="https://github.com/fruitfuljs/website" class="link blue">GitHub</a>.
-          Built with <a href="http://choo.io" class="link blue">choo</a> and love.
+          You can improve this website on <a href="https://github.com/fruitfuljs/website" class="link dark-blue">GitHub</a>.
+          Built with <a href="http://choo.io" class="link dark-blue">choo</a> and love.
         </footer>
       </div>
     </body>

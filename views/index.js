@@ -22,7 +22,7 @@ function view (state, emit) {
 
         <p>
           Sound interesting? Start by reading the
-          <a href="https://github.com/fruitfuljs/fruitfuljs/blob/master/MIGRATING.md" class="link blue">migration guide</a>!
+          <a href="https://github.com/fruitfuljs/fruitfuljs/blob/master/MIGRATING.md" class="link dark-blue">migration guide</a>!
         </p>
 
         <h1 class="f3 mb0">Repositories</h1>
