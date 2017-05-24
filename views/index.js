@@ -14,6 +14,16 @@ function view (state, emit) {
           collaboration when maintaining packages, and this is reflected in our
           work.
         </p>
+
+        <p class="measure lh-copy">
+          We are convinced that everything you put into your 
+          <code>package.json</code>, <code>yarn.lock</code> or <code>bower.json</code>
+          should have more than <i>one</i> maintainer. It should have some guarantees
+          that tomorrow, or in a week it will still be there in equal or better
+          quality. If you, at some point, decide to abandon maintenance for
+          your project, we are going to ensure that it doesn't just die a slow death.
+        </p>
+
         <p class="measure lh-copy">
           One of our fundamental principles is that everyone is welcome. We
           pride ourselves in being an inclusive project, and every contributor
