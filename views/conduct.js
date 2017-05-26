@@ -24,8 +24,8 @@ function view (state, emit) {
         </p>
         <p class="measure lh-copy">
           To contact the organization administrators, you should send an email
-          to <a href="mailto:coc@fruitfuljs.org">coc@fruitfuljs.org</a>. This
-          is the recommended method, however you may also contact one of the
+          to <a href="mailto:coc@fruitfuljs.org" class="link dark-blue">coc@fruitfuljs.org</a>.
+          This is the recommended method, however you may also contact one of the
           administrators in private if possible.
         </p>
       </div>
