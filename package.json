@@ -3,6 +3,8 @@
   "scripts": {
     "start": "bankai index.js -p 3001 -j [ -t sheetify/transform ] -d",
     "build": "bankai build index.js dist/ -j [ -t sheetify/transform -t unassertify -t yo-yoify -t uglifyify -p bundle-collapser/plugin ]",
+    "lint": "standard",
+    "test": "npm run lint",
     "deploy": "npm run build && gh-pages -d dist",
     "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'updated CODE_OF_CONDUCT.md'"
   },
@@ -18,5 +20,8 @@
     "unassertify": "2.0.4",
     "weallbehave": "1.2.0",
     "yo-yoify": "3.7.0"
+  },
+  "devDependencies": {
+    "standard": "10.0.2"
   }
 }
