@@ -40,7 +40,7 @@ All of the routes are kept in `index.js`. When adding a new page, don't forget t
 import your view file and also add a new route.
 
 Views are mostly correspondent to separate pages and are found in the `views/` subfolder.
-They can be pretty simple, see the `views/conduct.md` page for an example.
+They can be pretty simple, see the `views/conduct.js` page for an example.
 
 ## Deploying
 
