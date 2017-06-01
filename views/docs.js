@@ -4,12 +4,14 @@ var layout = require('./layout')
 var pages = [
   {
     name: 'migrating',
-    description: 'Information on how to, as a library maintainer, initiate the process of moving to Fruitful.'
+    description: 'Information on how to, as a library maintainer, initiate the process of moving to fruitful.'
   }
 ]
 
 function view (state, emit) {
   return layout(state, emit, function () {
+    document.title = 'documentation - fruitful'
+
     return html`
       <div>
         <h2>Documentation</h2>

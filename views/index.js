@@ -4,12 +4,12 @@ var layout = require('./layout')
 
 function view (state, emit) {
   return layout(state, emit, function () {
-    document.title = 'Fruitful'
+    document.title = 'fruitful'
 
     return html`
       <div class="mt3">
         <p class="measure lh-copy">
-          Fruitful is a community of volunteers who are joining forces to
+          fruitful is a community of volunteers who are joining forces to
           maintain adopted or abandoned JavaScript packages. We strongly value
           collaboration when maintaining packages, and this is reflected in our
           work.

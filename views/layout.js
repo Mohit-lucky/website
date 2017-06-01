@@ -6,7 +6,7 @@ function layout (state, emit, view) {
     <body>
       <div class="ph3 ph5-ns sans-serif">
         <img src="/assets/logo.png" alt="fruitful logo (a tomato)" class="v-mid" width=75 />
-        <h1 class="f1 dib v-mid pl3">fruitful.js</h1>
+        <h1 class="f1 dib v-mid pl3">fruitful</h1>
         ${header(state, emit)}
 
         ${view()}
